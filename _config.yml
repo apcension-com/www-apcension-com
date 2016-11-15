@@ -2,22 +2,22 @@
 #
 
 # Site settings
-title: Apcension 
+title: Apcension
 description: |
-  Cloud Solutions and services  
+  Cloud Solutions and services
 
   Only Assholes have offices; we work in the cloud 😝
-owner: Your Name # or company name
+owner: Apcension, LLC # or company name
 first_published: 2016 # if migrating another site, the year of your first publish
-email: your-email@domain.com
+email: hosting@apcension.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://www.apcension.com" # the base hostname & protocol for your site
 social:
-  twitter: https://twitter.com/<username>
-  github: https://github.com/<username>
-  linkedin-square: https://linkedin.com/in/<username>
-  facebook-official: https://facebook.com/<username>
-  google-plus-square: https://plus.google.com/u/0/+<username>
+  twitter: https://twitter.com/apcension
+  github: https://github.com/apcension
+  #linkedin-square: https://linkedin.com/in/<username>
+  #facebook-official: https://facebook.com/<username>
+  #google-plus-square: https://plus.google.com/u/0/+<username>
   #email: /contact/
   #flickr:
   #instagram:
