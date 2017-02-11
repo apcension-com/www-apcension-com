@@ -6,6 +6,12 @@ Note: @arkadianriver is in no way associated with @n33co
 Below is @n33co's readme from the original pure HTML theme
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+# build and test
+* vagrant up
+* cd www-apcension.com
+* jekyll build
+* jekyll serve --host 0.0.0.0
+
 
 Spectral by HTML5 UP
 html5up.net | @n33co
