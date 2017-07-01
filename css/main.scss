@@ -16,6 +16,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
 	@import 'libs/skel';
 
 	@include skel-breakpoints((
@@ -1293,7 +1294,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		@include vendor('transform', 'translateX(20em)');
 		@include vendor('transition', 'transform #{_duration(menu)} ease');
 		-webkit-overflow-scrolling: touch;
-		background: _palette(accent1, bg);
+		background: #252c33;
 		color: _palette(accent1, fg-bold);
 		height: 100%;
 		max-width: 80%;

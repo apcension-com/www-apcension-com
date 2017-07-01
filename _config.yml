@@ -4,11 +4,11 @@
 # Site settings
 title: Apcension
 description: |
-  Delivered Cloud Services and Solutions
+  Cloud Based Solutions & Services
 
-  We're here to help you succeed!
+  inquiries@apcension.com
 
-  (e) inquiries@apcension.com
+
 
 owner: Apcension, LLC # or company name
 first_published: 2016 # if migrating another site, the year of your first publish
@@ -19,11 +19,11 @@ social:
   twitter: https://twitter.com/apcension
   github: https://github.com/apcension
   #linkedin-square: https://linkedin.com/in/<username>
-  #facebook-official: https://facebook.com/<username>
+  facebook-official: https://www.facebook.com/Apcension/?view_public_for=228448270898126
   #google-plus-square: https://plus.google.com/u/0/+<username>
-  #email: /contact/
+  email: inquiries@apcension.com
   #flickr:
-  #instagram:
+  instagram: https://www.instagram.com/apcension/
   #youtube-square:
   #spotify:
   #stack-overflow:
