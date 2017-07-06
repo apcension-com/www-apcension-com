@@ -1,7 +1,6 @@
 <!-- Header -->
 <header id="header"{% if page.layout == 'landing' %} class="alt"{% endif %}>
   <h1><a href="{{ site.baseurl }}/index.html">{{ site.title }}</a></h1>
-  <!--
   <nav id="nav">
     <ul>
       <li class="special">
@@ -9,15 +8,15 @@
         <div id="menu">
           <ul>
             <li><a href="index.html">Home</a></li>
-            {% for my_page in site.pages %}
-            {% if my_page.title %}
-            <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+            {% assign pages = site.pages | sort: 'weight' %} 
+          {% for p in pages %}
+            {% if p.weight %}
+              <li> <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a> </li>
             {% endif %}
-            {% endfor %}
+          {% endfor %}
           </ul>
         </div>
       </li>
     </ul>
   </nav>
-  -->
 </header>
