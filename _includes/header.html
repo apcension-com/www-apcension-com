@@ -10,7 +10,7 @@
             <li><a href="index.html">Home</a></li>
             {% assign pages = site.pages | sort: 'weight' %} 
           {% for p in pages %}
-            {% if p.weight %}
+            {% if p.menu %}
               <li> <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a> </li>
             {% endif %}
           {% endfor %}

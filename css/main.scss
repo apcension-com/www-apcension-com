@@ -4,11 +4,61 @@
 
 $baseurl: '{{ site.baseurl }}/images';
 
+$gridGutter: 60px;
+$totalColumns: 12;
+$gridMaxWidth: 1680px;
+$centeredMaxWidth: 1100px;
+
+$bp-s: 460px;
+$bp-m: 800px;
+$bp-ml: 960px;
+$bp-l: $gridMaxWidth;
+
+$dark-grey: #303030;
+$another-dark-grey: #454545;
+$seafoam-light: #9CD3B1;
+$seafoam-dark: #68B28E;
+$dark-seafoam-green: #314A47;
+
+$henrietta-grey: #E9E9EA;
+$josh-grey: #F4F4F4;
+$anika-grey: #D2D4D5;
+
+%resetul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+@function grid-calc($colNumber, $totalColumns) {
+  $result: percentage($colNumber / $totalColumns);
+
+  @if $result == 0% {
+    $result: 0;
+  }
+
+  @return $result;
+}
+
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'font-awesome.min.css';
+
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
+
+// following imports are from the travis blog
+//@import "normalize.scss"
+
+@import "libs/layout";
+@import "libs/top";
+@import "libs/footer";
+@import "libs/landing";
+@import "libs/blog";
+@import "libs/projects";
+@import "libs/animation";
+
+
 
 /*
 	Spectral by HTML5 UP
