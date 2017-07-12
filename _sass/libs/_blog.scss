@@ -44,7 +44,7 @@
 
 .blog-sidebar {
   position: absolute;
-  height: auto;
+  min-height: 100%!important;
   -webkit-flex: 1 0 60%;
   flex: 1 0 60%;
   -webkit-transition: transform 200ms ease;
@@ -58,7 +58,7 @@
   justify-content: flex-end;
   align-items: stretch;
   background: {
-    image: url(/images/rebrand/eurucamprailsgirls.png);
+    image: url(/images/rebrand/tree.png);
     size: cover;
     position: top;
     repeat: no-repeat;
@@ -70,7 +70,7 @@
     display: inline-block;
     font-size: 26px;
     color: white;
-    border-bottom: 2px solid $seafoam-light;
+    border-bottom: 2px solid #16349A;
   }
 
   &.is-open {
@@ -101,6 +101,7 @@
     padding-top: $topbar-height;
     overflow-y: scroll;
     overflow-x: hidden;
+    text-decoration: none !important;
   }
 }
 
@@ -126,28 +127,11 @@
   margin: 1.5em auto 1em;
   text-align: center;
   background: {
-    image: url(/images/rebrand/foundation-logo.svg);
+    image: url();
     size: 100%;
     position: center center;
     repeat: no-repeat;
   };
-
-  a {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-
-  h2 {
-    margin: 2.7em auto 0;
-    font-weight: 300;
-    text-transform: uppercase;
-    background-color: rgba($dark-grey, 0.8);
-    display: inline-block;
-    font-size: 18px;
-    padding: 0.1em 0.9em;
-    text-align: center;
-  }
 }
 
 .bullet-list {
@@ -155,6 +139,7 @@
 
   li {
     margin-bottom: 1em;
+    text-decoration: none !important;
   }
 
   .sidebar-arrow {
@@ -166,6 +151,8 @@
     -webkit-transition: transform 200ms ease;
     transition: transform 200ms ease;
     vertical-align: middle;
+    text-decoration: none !important;
+    color: #16349A;
 
     svg polygon {
       fill: $seafoam-light;
@@ -246,6 +233,7 @@
 
 .post-title {
   margin-bottom: 0.4rem;
+  text-decoration: none !important;
 
   a {
     @extend %font-serif;
