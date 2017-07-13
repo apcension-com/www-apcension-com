@@ -1,17 +1,20 @@
 ---
-layout: default
+layout: blog
 ---
-<article id="main">
-
-  <header>
-    <h2>{{ page.title }}</h2>
-    Date: {{ page.date }}</br >
-  </header>
-
-  <section class="wrapper style5">
-    <div class="inner">
-      {{ content }}
-    </div>
-  </section>
-
-</article>
+<div class="blog-list">
+  <div class="blog-list-inner">
+    {% for post in site.posts limit:1 %}
+    <article class="post">
+      <h1 class="post-title">
+        <a href="{{ page.url }}">{{ page.title }}</a>
+      </h1>
+      <p class="post-meta">
+        {% if page.twitter %} <a href="http://twitter.com/{{ page.twitter }}">{{ page.author }}</a>{% else %} {{ page.author }} {% endif %} {{ page.date | date: "%B %-d, %Y" }}
+      </p>
+      <div class="content">
+        {{ content }}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</div>
