@@ -69,7 +69,7 @@
 
     display: inline-block;
     font-size: 26px;
-    color: white;
+    color: black;
     border-bottom: 2px solid #16349A;
   }
 
@@ -136,10 +136,10 @@
 
 .bullet-list {
   @extend %resetul;
-
+  border-bottom: 0px;
   li {
     margin-bottom: 1em;
-    text-decoration: none !important;
+    border-bottom: 0px;
   }
 
   .sidebar-arrow {
@@ -151,12 +151,12 @@
     -webkit-transition: transform 200ms ease;
     transition: transform 200ms ease;
     vertical-align: middle;
-    text-decoration: none !important;
-    color: #16349A;
+    color: black;
+    border-bottom: 0px;
 
     svg polygon {
-      fill: $seafoam-light;
-      stroke: #9CD3B1;
+      fill: black;
+      stroke: $seafoam-dark;
       stroke-width: 2px;
       stroke-linecap: square;
     }
@@ -164,12 +164,14 @@
 
   a {
     color: white;
-    text-decoration: none;
+    border-bottom: 0px;
 
     &:hover {
       .sidebar-arrow {
         -webkit-transform: rotate(90deg) translateY(-0.4em);
         transform: rotate(90deg) translateY(-0.4em);
+        color: black;
+        border-bottom: 0px;
       }
     }
   }
@@ -177,9 +179,11 @@
 
 .bullet-list--inverted {
   @extend .bullet-list;
+  border-bottom: 0px;
 
   a {
     color: $dark-grey;
+    border-bottom: 0px;
   }
 
   @media (min-width: $bp-m) {
@@ -233,7 +237,7 @@
 
 .post-title {
   margin-bottom: 0.4rem;
-  text-decoration: none !important;
+  text-decoration: none;
 
   a {
     @extend %font-serif;
@@ -241,7 +245,7 @@
     display: inline-block;
     font-size: 32px;
     color: $dark-grey;
-    text-decoration: none !important;
+    border-bottom: 0px;
 
 
     &:hover {
@@ -255,10 +259,12 @@
   color: $dark-grey;
 
   a {
-    color: $seafoam-dark;
+    color: $seafoam-light;
+    margin-right: 15px;
     text-decoration: none;
 
     &:hover {
+      margin-right: 15px;
       text-decoration: none;
     }
   }
