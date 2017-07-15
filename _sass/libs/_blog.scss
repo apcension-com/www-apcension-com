@@ -58,7 +58,7 @@
   justify-content: flex-end;
   align-items: stretch;
   background: {
-    image: url(/images/rebrand/tree.png);
+    image: url(/images/tree.jpg);
     size: cover;
     position: top;
     repeat: no-repeat;
@@ -70,7 +70,7 @@
     display: inline-block;
     font-size: 26px;
     color: black;
-    border-bottom: 2px solid #16349A;
+    border-bottom: 0px solid #16349A;
   }
 
   &.is-open {
