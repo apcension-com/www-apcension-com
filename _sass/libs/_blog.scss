@@ -208,6 +208,9 @@
     width: 100%;
   }
 
+  h1 {
+    color: $dark-grey;
+  }
   h2 {
     color: $dark-grey;
   }
@@ -248,7 +251,6 @@
     text-decoration: none !important;
     border-bottom: 0px;
 
-
     &:hover {
       text-decoration: none;
       border-bottom: 0px;
@@ -260,14 +262,19 @@
   margin-top: 0.5rem;
   color: $dark-grey;
 
-  a {
+  h1 {
     color: $seafoam-dark;
+    border-bottom: 0px;
+  }
+
+  a {
+    color: $seafoam-light;
     text-decoration: none;
     border-bottom: 0px;
 
     &:hover {
-      text-decoration: none;
-      border-bottom: 0px;
+      text-decoration: underline;
+      color: $seafoam-dark;
     }
   }
 }
