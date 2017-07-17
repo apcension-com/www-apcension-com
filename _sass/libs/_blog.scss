@@ -102,6 +102,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     text-decoration: none !important;
+    border-bottom: 0px;
   }
 }
 
@@ -140,6 +141,7 @@
   li {
     margin-bottom: 1em;
     text-decoration: none !important;
+    border-bottom: 0px;
   }
 
   .sidebar-arrow {
@@ -152,11 +154,11 @@
     transition: transform 200ms ease;
     vertical-align: middle;
     text-decoration: none !important;
-
+    border-bottom: 0px;
 
     svg polygon {
       fill: $seafoam-light;
-      stroke: #16349A;
+      stroke: #000000;
       stroke-width: 2px;
       stroke-linecap: square;
     }
@@ -165,6 +167,7 @@
   a {
     color: white;
     text-decoration: none;
+    border-bottom: 0px;
 
     &:hover {
       .sidebar-arrow {
@@ -234,6 +237,7 @@
 .post-title {
   margin-bottom: 0.4rem;
   text-decoration: none !important;
+  border-bottom: 0px;
 
   a {
     @extend %font-serif;
@@ -242,10 +246,12 @@
     font-size: 32px;
     color: $dark-grey;
     text-decoration: none !important;
+    border-bottom: 0px;
 
 
     &:hover {
       text-decoration: none;
+      border-bottom: 0px;
     }
   }
 }
@@ -257,9 +263,11 @@
   a {
     color: $seafoam-dark;
     text-decoration: none;
+    border-bottom: 0px;
 
     &:hover {
       text-decoration: none;
+      border-bottom: 0px;
     }
   }
 }
