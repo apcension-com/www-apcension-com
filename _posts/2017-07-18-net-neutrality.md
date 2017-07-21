@@ -7,6 +7,7 @@ author: Holly Froman
 twitter: apcension
 published: true
 tags: net neutrality
+comments: true
 ---
 
 ## Net Neutrality

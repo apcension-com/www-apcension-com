@@ -7,6 +7,7 @@ author: Greg Richardson
 twitter: apcension
 published: true
 tags: windows10 install raid
+comments: true
 ---
 
 ## Install Error
