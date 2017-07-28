@@ -97,7 +97,7 @@
     -webkit-flex: 0 0 62%;
     flex: 0 0 62%;
     height: 100vh;
-    margin-top: -150;
+    margin-top: -200;
     padding-top: $topbar-height;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -212,6 +212,9 @@
     color: $dark-grey;
   }
   h2 {
+    color: $dark-grey;
+  }
+  h3 {
     color: $dark-grey;
   }
 
