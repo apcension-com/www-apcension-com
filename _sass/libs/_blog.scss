@@ -97,7 +97,7 @@
     -webkit-flex: 0 0 62%;
     flex: 0 0 62%;
     height: 100vh;
-    margin-top: -200;
+    margin-top: -150;
     padding-top: $topbar-height;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -214,9 +214,6 @@
   h2 {
     color: $dark-grey;
   }
-  h3 {
-    color: $dark-grey;
-  }
 
   hr {
     border-top: none;
@@ -245,7 +242,7 @@
   text-decoration: none !important;
   border-bottom: 0px;
   margin-top: 35px;
-  vertical-align: text-top;
+
 
   a {
     @extend %font-serif;
@@ -255,6 +252,7 @@
     color: $dark-grey;
     text-decoration: none !important;
     border-bottom: 0px;
+    line-height: normal;
 
     &:hover {
       text-decoration: none;
