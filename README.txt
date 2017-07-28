@@ -12,6 +12,9 @@ Below is @n33co's readme from the original pure HTML theme
 * jekyll build
 * jekyll serve --host 0.0.0.0
 
+Or via docker:
+* docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll -it -p 4000:4000 -e POLLING=true jekyll/jekyll jekyll serve --force_polling
+
 
 Spectral by HTML5 UP
 html5up.net | @n33co
