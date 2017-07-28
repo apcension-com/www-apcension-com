@@ -12,9 +12,9 @@ comments: true
 
 ## Packer
 
-[HashiCorp](https://www.hashicorp.com) has been an amazingly disruptive force in the DevOps world - for the better.  They bring a focused vision of for automation tools that transcend cloud and baremetal infrastructure.  One such tool that I've used for a few years now is [Packer](https://www.packer.io).  Whether you are leveraging an ephemeral stack on the cloud or streamlining internal virtual machines, Packer provides a wonderful foundation to build upon.  
+[HashiCorp](https://www.hashicorp.com) has been an amazingly disruptive force in the DevOps world - for the better.  They bring a focused vision for automation tools that transcend cloud and baremetal infrastructure.  One such tool that I've used for a few years now is [Packer](https://www.packer.io).  Whether you are leveraging an ephemeral stack on the cloud or streamlining internal virtual machines, Packer provides a wonderful foundation to build upon.  
 
-A recent client project had a use case for automating a CentOS 7 image destined for Hyper-V via Window 10.  I've somehow managed to avoid Hyper-V for a while now, so I'll leverage this opportunity to share some learnings and pitfalls using Packer w/ Windows 10.
+A recent client project had a use case for automating a CentOS 7 image destined for Hyper-V via Window 10.  I've somehow managed to avoid Hyper-V for a while now, so I'll leverage this opportunity to share some learnings and pitfalls using Packer with Windows 10.
 
 For more background on Packer and how to use it, head over to their [Docs](https://www.packer.io/docs/install/index.html) - plenty of examples to get your going.  I've also put some samples from this article out in [git repo](https://github.com/apcension-com/packer-hyperv).
 
@@ -91,7 +91,7 @@ _packer.json_
 
 Next the kickstart file.  This will let Anaconda perform an unattended installation upon boot.  As noted above, we're having Packer mount the kickstart via a virtual Floppy Drive as the guest tools are not yet installed on the guest OS, network connectivity between Hyper-V and the guest won't work... yet.
 
-There are a number of things I wont dive into in this Kickstart, but please comment below if there are questions.  We're basically performing a very minimal install, adding a packer user and giving them full Sudo which will not prompt for a password.  Packer will then use this account to perform further bootstrapping once CentOS7 is installed and SSH is accessible.
+There are a number of things I won't dive into in this Kickstart, but please comment below if there are questions.  We're basically performing a very minimal install, adding a packer user and giving them full Sudo which will not prompt for a password.  Packer will then use this account to perform further bootstrapping once CentOS7 is installed and SSH is accessible.
 
 _ks.cfg_
 ```
