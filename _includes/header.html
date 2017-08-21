@@ -8,13 +8,17 @@
         <a href="#menu" class="menuToggle"><span>Menu</span></a>
         <div id="menu">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            {% assign pages = site.pages | sort: 'weight' %}
-          {% for p in pages %}
-            {% if p.menu %}
-              <li> <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a> </li>
-            {% endif %}
-          {% endfor %}
+            {% assign pages = site.pages | sort: 'order' %}
+            {% for p in pages %}
+              {% if p.menu %}
+                <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+            <ul class="child">
+            {% for post in site.posts limit:5 %}
+                  <li class="child"> <a href="{{ post.url }}">{{ post.title }}</a> </li>
+            {% endfor %}
+            </ul>
           </ul>
         </div>
       </li>

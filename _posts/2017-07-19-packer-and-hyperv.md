@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Packer with Hyper-V
+title: Packer with Hyper-V
 published: true
 date: 2017-07-19 12:00:01
 author: Greg Richardson
