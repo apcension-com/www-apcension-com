@@ -36,13 +36,13 @@ This server uses an LSI MegaRaid setup and has a web BIOS (read: ugly, basic UI)
 
 I'm really not a fan of GUI tools like this (or the 'web' bios nomenclature), but the LSI tool does make viewing all the details about your RAID setup
 rather straight forward.  Here's a glimpse on how this machine is setup.  We're going to dive into the `Virtual Drives` menu option in the subsequent images.
-![alt text](/images/raid3.jpg "Web Bios Default View")
+<img src="/images/raid3.jpg" width="100%"/>
 
 Here's how I find the virtual drive setup.  The _Boot Drive_ was set to Disk 1, pointing to linux / grub to handle the now defunct dual boot.
-![alt text](/images/raid1.jpg "Boot Drive pointing to old linux partition")
+<img src="/images/raid1.jpg" width="100%"/>
 
 It was a simple change in the end, just set the _Boot Drive_ to 0, for Drive 0.
-![alt text](/images/raid2.jpg "Boot Drive set to Disk 0")
+<img src="/images/raid2.jpg" width="100%" />
 
 # Back to the install
 
