@@ -2,10 +2,13 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Posts"
-    url: /posts/
-  #- title: "Categories"
-  #  url: /categories/
+  - title: "Jobs"
+    url: /jobs/
+  - title: "Articles"
+    url: /articles/
+
+
+
   #- title: "Tags"
   #  url: /tags/
   #- title: "Pages"

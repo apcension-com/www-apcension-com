@@ -2,7 +2,7 @@
 title: Packer with Hyper-V
 header:
   teaser: /assets/images/unsplash-image-gallery-6-th.png
-permalink: /Packer/
+permalink: /articles/Packer/
 ---
 ### PACKER
 

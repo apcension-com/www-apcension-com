@@ -1,59 +1,67 @@
 ---
-layout: archive
-title: "Post Archive with Feature Rows"
+title: "About Us"
+layout: splash
 permalink: /about/
-author_profile: true
+date: 2016-03-23T11:48:41-04:00
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/unsplash-gallery-image-1-th.jpg
+  #cta_label: "Download"
+  #cta_url: "https://github.com/mmistakes/minimal-mistakes/"
+  caption: "Photo credit: [**Pexels**](https://unsplash.com)"
+excerpt: "We Scale Business Applications on the Cloud and Bare Metal"
+intro:
+  - excerpt: 'Our team has the background and industry expertise to help your business leverage modern cloud technologies.'
 feature_row:
-  - image_path: assets/images/unsplash-gallery-image-1-th.jpg
-    alt: "placeholder image 1"
-    title: "Placeholder 1"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder 2"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
-    title: "Placeholder 3"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-feature_row2:
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder Image Left Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
+  - #image_path: assets/images/unsplash-gallery-image-1-th.jpg
+    #alt: "placeholder image 1"
+    title: "Process Automation"
+    excerpt: "DevOps is an ever important philosphy and role in the modern Enterprise. We can get your project on the right track today!"
 feature_row3:
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    #alt: "placeholder image 2"
+    title: "CI/CD AUTOMATION"
+    excerpt: "Today's business is constantly evolving. Having the ability to test and deploy applications with confidence is critical. We can help."
+    #url: "#test-link"
+    #btn_label: "Read More"
+    #btn_class: "btn--primary"
+feature_row5:
+  - image_path: /assets/images/unsplash-gallery-image-3-th.png
+    title: "INFRASTRUCTURE AS CODE"
+    excerpt: "Automation, dynamic environments & code versioning are just a couple reasons why you should be managing your infrastructure via code."
+feature_row2:
+  - image_path: /assets/images/unsplash-gallery-image-4-th.jpg
     alt: "placeholder image 2"
-    title: "Placeholder Image Right Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Right aligned with `type="right"`'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
+    title: "Maximizing Uptime"
+    excerpt: "Simply deploying applications to the cloud isn't enough. Understanding how to maximize uptime for your unique applications is always our priority."
+    #url: "#test-link"
+    #btn_label: "Read More"
+    #btn_class: "btn--primary"
+#feature_row3:
+  - #image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    #alt: "placeholder image 2"
+    #title: "Placeholder Image Right Aligned"
+    #excerpt: 'This is some sample content that goes here with **Markdown** formatting. Right aligned with `type="right"`'
+    #url: "#test-link"
+    #btn_label: "Read More"
+    #btn_class: "btn--primary"
 feature_row4:
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+  - image_path: /assets/images/unsplash-gallery-image-5-th.jpg
     alt: "placeholder image 2"
-    title: "Placeholder Image Center Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Centered with `type="center"`'
-    url: "#test-link"
-    btn_label: "Read More"
+    title: "THE RIGHT TOOL FOR THE JOB"
+    excerpt: "Continuous Integration and Deployment are important foundations for automation. Jenkins 2 is our preferred tool of the trade. Kubernetes has been our hands-down favorite new tech this year and a go-to staple for container orchestration. Github Enterprise or Bitbucket are our ideal code versioning software. So long as there is a webhook to drive automation principals."
+    #url: "#test-link"
+    #btn_label: "Read More"
     btn_class: "btn--primary"
 ---
 
-{% for post in site.posts limit: 5 %}
-  {% include archive-single.html %}
-{% endfor %}
+{% include feature_row type="center" %}
 
-{% include feature_row id="intro" type="center" %}
+{% include feature_row id="feature_row3" type="left" %}
 
-{% include feature_row %}
+{% include feature_row id="feature_row5" type="right" %}
 
 {% include feature_row id="feature_row2" type="left" %}
 
-{% include feature_row id="feature_row3" type="right" %}
-
-{% include feature_row id="feature_row4" type="center" %}
+{% include feature_row id="feature_row4" type="right" %}

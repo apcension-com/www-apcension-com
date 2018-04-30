@@ -2,7 +2,7 @@
 title: Windows 10 Install Fun
 header:
   teaser: /assets/images/unsplash-image-gallery-8-th.jpg
-permalink: /Windows/
+permalink: /articles/Windows/
 ---
 ### INSTALL ERROR
 
