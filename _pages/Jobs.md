@@ -5,9 +5,18 @@ permalink: /jobs/
 ---
 
 
-| Position         |  Location                                                 |
+<!--| Position         |  Location                                                 |
 | ---------------- | --------------------------------------------------------- |
 | [Devops](#)      | Las Vegas, NV                                             |
 | [Toothfairy](#)  | Remote                                                    |
 | [Elf](#)         | San Diego, CA                                             |
-| [Puppy Intern](#)| Las Vegas, NV                                             |
+| [Puppy Intern](#)| Las Vegas, NV                                             |-->
+Sorry, there are no positions currently available...
+but if you wish to be considered for any future
+positions please email your resume to:
+{: .text-justify}
+### jobs@apcension.com
+{: .text-justify}
+
+# Thank You
+{: .text-center}

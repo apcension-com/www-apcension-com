@@ -1,6 +1,10 @@
 ---
 title: Windows 10 Install Fun
+comments: true
 header:
+  overlay_image: /assets/images/unsplash-image-gallery-8-th.jpg
+  overlay_filter: 0.5
+  show_overlay_excerpt: false
   teaser: /assets/images/unsplash-image-gallery-8-th.jpg
 permalink: /articles/Windows/
 ---
@@ -18,7 +22,7 @@ Little known to me at the time (clients machine, not one I had dealt with the or
 
 After researching the issue for more details, one thing was for certain, folks have run into some pretty weird installation problems with Windows over the years. The problem I ran into ended up being a tad different than most of the posts above elude to, but similar enough for the error the installer provided:
 
-Error: "We couldn't create a new partition or locate an existing one"
+    Error: "We couldn't create a new partition or locate an existing one"
 
 I used Rufus to create a bootable USB thumb-drive from an ISO the client had (no DVD drives on these servers). I went about attempting to install windows10 onto the primary Disk 0, leaving Disk 1 for CentOS and a third disk for their vast dataset. I tried a number of methods to clean up Disk 0, create a fresh partition, make sure it’s active, etc; but each time the wonderful installer would fail with the above error. Fun.
 
@@ -28,4 +32,18 @@ I eventually found the issue with the RAID configuration (after fiddling with di
 
 This server uses an LSI MegaRaid setup and has a web BIOS (read: ugly, basic UI). Since I’m not that familiar with the LSI CLI, I booted into the GUI and poked around. Once I discovered the RAID card was setup for a MBR on the wrong virtual drive (changing it to point at Disk 0), the installer finally gracefully continued on.
 
-I’m really not a fan of GUI tools like this (or the ‘web’ bios nomenclature), but the LSI tool does make viewing all the details about your RAID setup rather straight forward. Here’s a glimpse on how this machine is setup. We’re going to dive into the Virtual Drives menu option in the subsequent images.
+I’m really not a fan of GUI tools like this (or the ‘web’ bios nomenclature), but the LSI tool does make viewing all the details about your RAID setup rather straight forward. Here’s a glimpse on how this machine is setup. We’re going to dive into the ```Virtual Drives``` menu option in the subsequent images.
+
+![Windows 10](/assets/images/SSImage1.jpg)
+
+Here's how I find the virtual drive setup. The *Boot Drive* was set to Disk 1, pointing to linux / grub to handle the now defunct dual boot.
+
+![Windows10](/assets/images/SSImage2.jpg)
+
+It was a simple change in the end, just set the *Boot Drive* to 0, for Drive 0.
+
+![Windows10](/assets/images/SSImage3.jpg)
+
+### Back to the install
+
+After the next boot and install attempt, Windows 10 finally proceeded without further errors. w00t.

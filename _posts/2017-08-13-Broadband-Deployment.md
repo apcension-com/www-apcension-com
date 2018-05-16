@@ -1,8 +1,12 @@
 ---
 title: Broadband Deployment
 header:
+  overlay_image: /assets/images/unsplash-gallery-image-1-th.jpg
+  overlay_filter: 0.5
+  show_overlay_excerpt: false
   teaser: /assets/images/unsplash-gallery-image-1-th.jpg
 permalink: /articles/Broadband/
+comments: true
 ---
 ### WHAT IS THE FCC?
 

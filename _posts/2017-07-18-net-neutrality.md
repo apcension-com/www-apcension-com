@@ -1,6 +1,10 @@
 ---
 title: Net Neutrality
+comments: true
 header:
+  overlay_image: /assets/images/unsplash-image-gallery-7-th.jpg
+  overlay_filter: 0.5
+  show_overlay_excerpt: false
   teaser: /assets/images/unsplash-image-gallery-7-th.jpg
 permalink: /articles/Net/
 ---
