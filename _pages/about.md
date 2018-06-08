@@ -11,11 +11,11 @@ header:
   #cta_label: "Download"
   #cta_url: "https://github.com/mmistakes/minimal-mistakes/"
   caption: "Photo credit: [**Pexels**](https://unsplash.com)"
-excerpt: "We Scale Business Applications on the Cloud and Bare Metal"
-intro:
-  - excerpt: 'Our team has the background and industry expertise to help your business leverage modern cloud technologies.'
 feature_row:
-  - #image_path: assets/images/unsplash-gallery-image-1-th.jpg
+- title: "We Scale Business Applications on the Cloud and Bare Metal"
+  excerpt: "Our consulting team has the background and industry expertise to help your business leverage modern cloud technologies."
+feature_row1:
+  - image_path: assets/images/unsplash-image-gallery-6-th.png
     #alt: "placeholder image 1"
     title: "Process Automation"
     excerpt: "DevOps is an ever important philosphy and role in the modern Enterprise. We can get your project on the right track today!"
@@ -58,6 +58,8 @@ feature_row4:
 ---
 
 {% include feature_row type="center" %}
+
+{% include feature_row id="feature_row1" type="right" %}
 
 {% include feature_row id="feature_row3" type="left" %}
 

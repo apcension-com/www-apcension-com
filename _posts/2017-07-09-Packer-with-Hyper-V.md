@@ -1,6 +1,5 @@
 ---
 title: Packer with Hyper-V
-layout: archive
 comments: true
 header:
   overlay_image: /assets/images/unsplash-image-gallery-6-th.png

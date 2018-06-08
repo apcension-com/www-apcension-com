@@ -15,8 +15,8 @@ Sorry, there are no positions currently available...
 but if you wish to be considered for any future
 positions please email your resume to:
 {: .text-justify}
-### jobs@apcension.com
-{: .text-justify}
+### <jobs@apcension.com>
+{: .text-center}
 
 # Thank You
 {: .text-center}
