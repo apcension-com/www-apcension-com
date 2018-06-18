@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
+{% endif %}
+
+<div id="main" role="main">
+  <article class="splash" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
+    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%B %d, %Y" }}">{% endif %}
+
+    <section class="page__content" itemprop="text">
+      {{ content }}
+    </section>
+  </article>
+</div>
+<!--<section>
+    {% if page.form %}
+  <form id="contactform" method="POST">
+      <input type="text" name="name" placeholder="Your name">
+      <input type="email" name="_replyto" placeholder="Your email">
+      <input type="hidden" name="_subject" value="Website contact" />
+      <textarea name="message" placeholder="Your message"></textarea>
+      <input type="text" name="_gotcha" style="display:none" />
+      <input type="submit" value="Send">
+  </form>
+  <script>
+      var contactform =  document.getElementById('contactform');
+      contactform.setAttribute('action', '//formspree.io/' + 'your' + '@' + 'email' + '.' + 'com');
+ </script>
+     {% endif %}
+</section>-->
